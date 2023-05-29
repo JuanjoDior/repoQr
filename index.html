@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Plantilla Básica</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Lector de códigos QR</title>
+  <style>
+    #video-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    #qr-canvas {
+      display: none;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <h1>PLANTILLA PARA QR Y PRUEBAS</h1>
+  <h1>Lector de códigos QR</h1>
   
-  <script src="script.js"></script>
+  <div id="video-container">
+    <video id="qr-video" width="100%"></video>
+    <canvas id="qr-canvas"></canvas>
+  </div>
+  
+  <div id="output"></div>
+  
+  <script src="https://rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script src="https://rawgit.com/cozmo/jsQR/master/dist/jsQR.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
