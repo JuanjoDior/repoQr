@@ -20,5 +20,6 @@ body {
   #qr-result {
     color: #333;
     font-weight: bold;
+    position: bottom;
   }
   
