@@ -19,7 +19,10 @@ body {
   
   #qr-result {
     color: #333;
-    font-weight: bold;
-    position: bottom;
+    position: absolute;
+    width: 547px;
+    height: 427px;
+    left: 447px;
+    top: 299px;
   }
   
