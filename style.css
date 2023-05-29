@@ -15,14 +15,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  #qr-result {
-    color: #333;
     position: absolute;
     width: 547px;
     height: 427px;
     left: 447px;
     top: 299px;
+  }
+  
+  #qr-result {
+    color: #333;
+    font-weight: bold;
+    position: relative;
   }
   
