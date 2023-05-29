@@ -35,5 +35,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     requestAnimationFrame(tick);
   }
 
-  navigator.mediaDevices.getUserMedia({ video: true }).then(handleSuccess).catch(handleError);
+  // Opciones para acceder únicamente a la cámara trasera
+  const constraints = {
+    video: { facingMode: { exact: "environment" } }
+  };
+
+  navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
 });
